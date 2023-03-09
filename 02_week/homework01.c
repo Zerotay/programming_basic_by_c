@@ -20,7 +20,7 @@ int main(){
     div = num1 / num2;
     remainder = num1 % num2;
 
-    printf("정수 연산\n");
+    printf("integer operater\n");
     printf("%i + %i = %i\n", num1, num2, sum);
     printf("%i - %i = %i\n", num1, num2, sub);
     printf("%i * %i = %i\n", num1, num2, mul);

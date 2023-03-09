@@ -19,7 +19,7 @@ int main(){
     mul = num1 * num2;
     div = num1 / num2;
 
-    printf("실수 연산\n");
+    printf("float operation\n");
     printf("%.2lf + %.2lf = %.2lf\n", num1, num2, sum);
     printf("%.2lf - %.2lf = %.2lf\n", num1, num2, sub);
     printf("%.2lf * %.2lf = %.2lf\n", num1, num2, mul);
