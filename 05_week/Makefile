@@ -1,11 +1,23 @@
 all :
 
 c1 :
-	gcc number.c -o a.out
+	gcc hw1.c -o a.out
 	./a.out
 	rm a.out
 c2 :
-	gcc bit.c -o a.out
+	gcc hw2.c -o a.out
+	./a.out
+	rm a.out
+c3 :
+	gcc hw3.c -o a.out
+	./a.out
+	rm a.out
+c4 :
+	gcc hw4.c -o a.out
+	./a.out
+	rm a.out
+c5 :
+	gcc hw5.c -o a.out
 	./a.out
 	rm a.out
 
@@ -51,5 +63,13 @@ h10 :
 	rm a.out
 h11 :
 	gcc homework11.c -o a.out
+	./a.out
+	rm a.out
+h12 :
+	gcc homework12.c -o a.out
+	./a.out
+	rm a.out
+h13 :
+	gcc homework13.c -o a.out
 	./a.out
 	rm a.out
