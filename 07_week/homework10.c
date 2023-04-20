@@ -1,0 +1,28 @@
+#include <stdio.h>
+int is_prime(int n);
+int get_integer(void);
+int main(void)
+{
+    int n;
+    n = get_integer() + 1;
+    while (n-- > 2)
+        if (is_prime(n) == 1)
+            printf("%d은 소수입니다.\n", n);
+    return 0;
+}
+int get_integer(void)
+{
+    int n;
+    printf("정수를 입력하시오: ");
+    scanf("%d", &n);
+    return n;
+}
+int is_prime(int n)
+{
+    int i;
+    for (i = 2; i < n; i++) {
+        if (n%i == 0)
+            return 0;
+    }
+    return 1;
+}
