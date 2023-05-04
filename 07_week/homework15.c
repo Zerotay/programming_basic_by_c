@@ -1,16 +1,8 @@
 #include <stdio.h>
 #include <math.h>
 #define PI 3.141592
-double rad(double degree)
-{
-    return PI * degree / 180.0;
-}
-void drawbar(int height)
-{
-    for (int i = 0; i < height; i++)
-    printf("*");
-    printf("\n");
-}
+double rad(double degree);
+void drawbar(int height);
 int main(void)
 {
     int degree, x, y;
@@ -20,4 +12,14 @@ int main(void)
         drawbar(y);
     }
     return 0;
+}
+double rad(double degree)
+{
+    return PI * degree / 180.0;
+}
+void drawbar(int height)
+{
+    for (int i = 0; i < height; i++)
+    printf("*");
+    printf("\n");
 }
