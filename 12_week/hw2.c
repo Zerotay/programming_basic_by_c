@@ -7,16 +7,16 @@ void swap(int* a, int *b);
 int main(void)
 {
     int aNum = 0, bNum = 0, cNum = 0, dNum=0;
-    printf("aNum¼ýÀÚ ÀÔ·Â : ");
+    printf("aNumï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
     scanf("%d", &aNum);
-    printf("bNum ¼ýÀÚ ÀÔ·Â : ");
+    printf("bNum ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
     scanf("%d", &bNum);
-    printf("cNum ¼ýÀÚ ÀÔ·Â : ");
+    printf("cNum ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
     scanf("%d", &cNum);
-    printf("dNum ¼ýÀÚ ÀÔ·Â : ");
+    printf("dNum ï¿½ï¿½ï¿½ï¿½ ï¿½Ô·ï¿½ : ");
     scanf("%d", &dNum);
     lineup(&aNum, &bNum, &cNum, &dNum);
-    printf("¼ø¼­´ë·Î Ãâ·Â : %d, %d, %d, %d ÀÔ´Ï´Ù \n", aNum, bNum, cNum, dNum);
+    printf("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ : %d, %d, %d, %d ï¿½Ô´Ï´ï¿½ \n", aNum, bNum, cNum, dNum);
     return 0;
 }
 
@@ -26,21 +26,4 @@ void swap(int* a, int *b)
     tmp = *a;
     *a = *b;
     *b = tmp;
-}
-
-void lineup(int* pa, int* pb, int* pc, int* pd)
-{
-    int temp = 0;
-    if (*pa > *pb)
-        swap(pa,pb);
-    if (*pa > *pc)
-        swap(pa,pc);
-    if (*pa > *pd)
-        swap(pa,pd);
-    if (*pb > *pc)
-        swap(pb,pc);
-    if (*pb > *pd)
-        swap(pb,pd);
-    if (*pc > *pd)
-        swap(pc,pd);
 }
